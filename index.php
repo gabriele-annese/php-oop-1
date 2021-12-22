@@ -12,34 +12,90 @@
     <h1>Hello</h1>
     <div class="card">
         <?php 
-            $movie1 = new Movie('Spider-man','2002', '7','20',
+            $movie1 = new Movie('Spider-man','2002', '7', 20,
             '18' );
         ?>
-        <h2><?php echo $movie1->title ?></h2>
-        <p><?php echo $movie1->tiyear_movietle ?></p>
-        <span><?php echo $movie1->vote ?> 
-             stelle su 10</span>
-        <p>prezzo bglietto: 
-            <?php echo $movie1->price ?>$</p>
+        <h2>Titolo del film:
+            <?php echo $movie1->title ?>
+        </h2>
+        <p>Anno di produzio1ne:
+            <span>
+                <strong>
+                    <?php echo $movie1->tiyear_movietle ?>
+                </strong>
+            </span>
+        </p>
+        <span>
+        <span>
+            Voto della critica:
+            <strong>
+                <?php echo $movie1->vote ?>
+                stelle su 10
+            </strong>
+        </span>
+        <p>Prezzo bglietto: 
+            <strong>
+                <?php echo $movie1->price ?>$
+            </strong>
+        </p>
         <span>Il film é adatto ad un pubblico di etá superiore:
-            <?php echo $movie1->age ?>+</span>
+            <strong>
+                <?php echo $movie1->age ?>+
+            </strong>
+        </span>
         <p>Sconto applicato:
-            <?php echo $movie1->sconto ?>%</p>
+            <strong>
+                <?php echo $movie1->getSconto() ?>%
+            </strong>
+        </p>
     </div>
+
     <div class="card">
         <?php 
             $movie1 = new Movie('House of Gucci','2021', '8','30','16');
         ?>
-        <h2><?php echo $movie1->title ?></h2>
-        <p><?php echo $movie1->tiyear_movietle ?></p>
+        <h2>Titolo del film:
+            <?php echo $movie1->title ?>
+        </h2>
+        <p>Anno di produzio1ne:
+            <?php echo $movie1->tiyear_movietle ?>
+        </p>
         <span><?php echo $movie1->vote ?> 
-             stelle su 10</span>
+             stelle su 10
+        </span>
         <p>prezzo bglietto: 
-            <?php echo $movie1->price ?>$</p>
+            <?php echo $movie1->price ?>$
+        </p>
         <span>Il film é adatto ad un pubblico di etá superiore:
-            <?php echo $movie1->age ?>+</span>
+            <?php echo $movie1->age ?>+
+        </span>
         <p>Sconto applicato:
-            <?php echo $movie1->sconto ?>%</p>
+            <?php echo $movie1->getSconto($sconto) ?>%
+        </p>
+    </div>
+
+    <div class="card">
+        <?php 
+            $movie1 = new Movie('Qui rido io','2021', '10','40','18');
+        ?>
+        <h2>Titolo del film:
+            <?php echo $movie1->title ?>
+        </h2>
+        <p>Anno di produzio1ne:
+            <?php echo $movie1->tiyear_movietle ?>
+        </p>
+        <span><?php echo $movie1->vote ?> 
+             stelle su 10
+        </span>
+        <p>prezzo bglietto: 
+            <?php echo $movie1->price ?>$
+        </p>
+        <span>Il film é adatto ad un pubblico di etá superiore:
+            <?php echo $movie1->age ?>+
+        </span>
+        <p>Sconto applicato:
+            <?php echo $movie1->getSconto($sconto) ?>%
+        </p>
     </div>
 </body>
 </html>
