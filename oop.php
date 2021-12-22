@@ -6,7 +6,9 @@
         public $price;
         public $age;
         public $sconto;
-        function __construct($title, $year_movie, $vote, $price,$age, $sconto = 0)
+        public $img;
+        function __construct($title, $year_movie, $vote, $price,$age, $sconto = 0,
+        $img)
         {
             $this->title = $title;
             $this->year_movie = $year_movie;
@@ -14,6 +16,7 @@
             $this->price = $price;
             $this->age = $age;
             $this->sconto = $sconto;
+            $this->img= $img;
         }
 
         public function getSconto(){

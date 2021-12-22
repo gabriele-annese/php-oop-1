@@ -13,8 +13,9 @@
     <div class="card">
         <?php 
             $movie1 = new Movie('Qui rido io','2021', '10', 20,
-            '18' );
+            '18', 0, 'https://pad.mymovies.it/filmclub/2018/11/049/locandina.jpg' );
         ?>
+        <img src="<?php echo $movie1->img ?>" width="200px" alt="">
         <h2>Titolo del film:
             <?php echo $movie1->title ?>
         </h2>
@@ -48,13 +49,15 @@
                 <?php echo $movie1->getSconto() ?>%
             </strong>
         </p>
+        <hr>
     </div>
 
     <div class="card">
         <?php 
-            $movie2 = new Movie('Spider-man','2002', '7', 20,
-            '16' );
+            $movie2 = new Movie('Spider-man 2','2002', '7', 20,
+            '16', 0, 'http://upload.wikimedia.org/wikipedia/en/thumb/0/02/Spider-Man_2_Poster.jpg/220px-Spider-Man_2_Poster.jpg' );
         ?>
+        <img src="<?php echo $movie2->img ?>" width="200px" alt="">
         <h2>Titolo del film:
             <?php echo $movie2->title ?>
         </h2>
@@ -89,12 +92,14 @@
             </strong>
         </p>
     </div>
+    <hr>
 
     <div class="card">
         <?php 
             $movie3 = new Movie('House of Gucci','2021', '9', 20,
-            '18' );
+            '18', 0, 'https://www.liberta.it/wp-content/uploads/2021/12/house-of-gucci-691x1024-COVER-1280.jpg' );
         ?>
+        <img src="<?php echo $movie3->img ?>" width="200px" alt="">
         <h2>Titolo del film:
             <?php echo $movie3->title ?>
         </h2>
@@ -129,5 +134,6 @@
             </strong>
         </p>
     </div>
+    <hr>
 </body>
 </html>
