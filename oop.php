@@ -8,7 +8,7 @@
         public $sconto;
         public $img;
         function __construct($title, $year_movie, $vote, $price,$age, $sconto = 0,
-        $img)
+        $img='https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg')
         {
             $this->title = $title;
             $this->year_movie = $year_movie;
